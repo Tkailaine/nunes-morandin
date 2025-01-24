@@ -76,9 +76,15 @@ flex-direction: row;
   transform: translate(0%,0%);
 }
 
+
 .footer{
   height: 300px;
 }
+
+.info-footer p{
+  font-size: 1em;
+}
+
 
 .sessao-footer{
 

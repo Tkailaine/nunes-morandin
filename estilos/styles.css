@@ -373,7 +373,7 @@ width: 80%;
 }
 
 .dot.active {
-  background-color: var(--cor3);
+  background-color: #2C6E6B;
 }
 
 .dot:hover {
@@ -461,7 +461,7 @@ width: 80%;
 }
 
 .btn-contato:hover{
-  background-color: #ac8531;
+  background-color: #2C6E6B;
 }
 .ft-atuacao{
   width: 100%;
@@ -838,126 +838,6 @@ width: 80%;
 }
 
 
-.lawyer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 1200px;
-  width: 100%;
-  align-items: center;
-}
-
-.lawyer-container ul{
-  list-style-type: none;
-}
-
-.lawyer-container li{
-  margin-bottom: 25px;
-}
-
-.lawyer-photo img {
-  width: 60%;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.lawyer-photo img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.lawyer-details {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-}
-
-.lawyer-details h2 {
-  font-size: 2rem;
-
-  margin-bottom: 5px;
-}
-
-.lawyer-title {
-  font-size: 1.2rem;
-  font-weight: bold;
- 
-  margin-bottom: 10px;
-}
-
-.lawyer-experience {
-  font-size: 1rem;
-  line-height: 1.6;
-
-}
-
-.contact-button {
-  align-self: start;
-  background: #BE9439;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
-  margin: 0px;
-}
-
-.contact-button:hover {
-  background: #e0af44;
-  transform: scale(1.05);
-}
-
-.citacao{
-  font-size: 1.5em;
-  font-style: italic;
-  margin: 30px 0px 0px 0px;
-}
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .lawyer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .lawyer-photo img {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  .contact-button {
-    align-self: center;
-  }
-}
-
-
-
-
-
-
-
-
-.btn-endereco{
-  border: none;
-  margin: 20px auto;
-  width: 350px;
-  height: 50px;
-  border-radius: 15px;
-  background-color: #BE9439;
-  color: white;
-  font-size: 1.2em;
-  font-family: var(--fonte-destaque);
-  font-weight: 300;
-  cursor: pointer;
-}
-
-.btn-endereco:hover{
-  background-color: #E0AF44;
-}
-
 
 
 
@@ -1030,7 +910,7 @@ width: 80%;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #2C6E6B;
 }
 
 /* Responsividade para telas pequenas */
@@ -1114,6 +994,11 @@ footer{
   margin-bottom: 15px;
 }
 
+.info-footer p{
+  margin-bottom: 15px ;
+  font-size: 0.8em;
+}
+
 footer ul, a{
   list-style-type: none;
   text-decoration: none;
@@ -1130,8 +1015,13 @@ h3{
   color: var(--cor3);
 }
 
+.links-uteis > li{
+
+  margin: 10px 0px;
+}
+
 .links-uteis > li > a:hover{
-  color: #E4AE39;
+  color: #2C6E6B;
 }
 
 .nav-footer{
@@ -1177,14 +1067,14 @@ h3{
 .form textarea:hover,
 .form textarea:focus {
   outline: none;
-  border-color: #E4AE39;
-  box-shadow: 0 0 0 2px #E4AE39 ;
+  border-color: #1B3332;
+  box-shadow: 0 0 0 2px #2C6E6B ;
 }
 
 .form button {
   display: block;
   padding: 1rem;
-  background: #E4AE39;
+  background: #1B3332;
   color: #fff;
   font: inherit;
   text-transform: uppercase;
@@ -1197,7 +1087,7 @@ h3{
 .form button:hover,
 .form button:focus {
   outline: none;
-  background: #1d1d1d;
+  background: #2C6E6B;
 }
 
 .divisoria{

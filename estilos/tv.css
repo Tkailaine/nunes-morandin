@@ -66,6 +66,9 @@
 
 
 
+  .info-footer p{
+    font-size: 1em;
+  }
 
 .sessao-footer{
     gap: 40px;
