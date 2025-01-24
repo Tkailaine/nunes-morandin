@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+.bandeira{
+  flex-direction: row;
+}
+.ft-bandeira{
+  width: 50%;
+}
+
+.ft-bandeira h1{
+  left: 45%;
+  width: 60%;
+}
+
+.slider-noticias{
+  width: 50%;
+  height: 600px;
+}
+
+.visivel{
+    display: none;
+  }
+
+.areas{
+    font-size: 1em;
+  }
+
+  
+.oculto{
+    display: block;
+    }
+
+.area-principal{
+
+flex-direction: row;
+
+}
+
+.area-secundaria{
+  flex-direction: row-reverse;
+}
+
+.ft-atuacao{
+    height: 700px;
+    
+}
+
+.ft-secundaria{
+  height: 700px;
+  
+}
+
+.imagem-destaque{
+  width: 40%;
+  margin-right: 50px;
+  
+}
+
+.cv-advogado{
+  background-image: url(../imagens/bandeira2-desktop.jpg);
+  height: 1200px;
+  font-size: 0.8em;
+}
+
+#reinaldo-card{
+  position: absolute;
+  left: 5%;
+  top: 8%;
+  transform: translate(0%,0%);
+}
+
+#michael-card{
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(0%,0%);
+}
+
+.footer{
+  height: 300px;
+}
+
+.sessao-footer{
+
+  justify-content: start;
+  flex-direction: row;
+  
+}
+
+.links-uteis > li{
+  font-size: 1.3em;
+  margin: 20px 0px;
+}
+
+.sessao-footer > div{
+margin-top: 25px;
+margin-right: 60px;
+}
+
+.form {
+    
+  width: 300px;
+  font-size: 1.125rem;
+}
+
+.links-uteis > li{
+  font-size: 1.3em;
+  margin: 20px 0px;
+}
+
+.sessao-footer > div{
+margin-top: 25px;
+margin-right: 60px;
+}
+

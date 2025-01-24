@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.logo img{
+  width: 160px;
+}
+nav.menu ul {
+  gap: 20px;
+}
+.bandeira{
+  flex-direction: row;
+}
+.ft-bandeira{
+  width: 50%;
+}
+
+
+.slider-noticias{
+  width: 50%;
+  height: 600px;
+}
+
+.news-slider {
+  top: 50%;
+
+}
+
+
+.areas{
+  font-size: 0.8em;
+
+}
+
+
+.ft-atuacao{
+height: 700px;
+
+}
+
+.ft-secundaria{
+  height: 700px;
+  
+  }
+
+  #reinaldo-card{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,0%);
+  }
+  
+  #michael-card{
+    position: absolute;
+    left: 50%;
+    top:78%;
+    transform: translate(-50%,0%);
+  }
+
+  .cv-advogado{
+    background-image: url(../imagens/banner-mobile.jpg);
+    height:3000px;
+    font-size: 0.8em;
+  }
+
+
+
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+  
+  .form {
+  
+    width: 300px;
+    font-size: 1.125rem;
+    margin-right: 30px;
+  }
+
+  .links-uteis > li{
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+

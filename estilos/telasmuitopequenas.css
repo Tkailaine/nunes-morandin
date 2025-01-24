@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.logo img{
+    width: 200px;
+}
+
+.iarea{
+margin: auto;
+width: 30px;
+height: 30px;
+}
+
+
+.cv-advogado{
+    background-image: url(../imagens/banner-mobile2.jpg);
+    
+  }
+
+  #reinaldo-card{
+    top: 28%;
+   
+  }
+  
+
+  #michael-card{
+    top:74%;
+  }
+  
+
+.chamada-acao{
+padding: 0px 20px 20px 20px;
+}
+
+.btn-endereco{
+
+width: 300px;
+height: 45px;}
+
