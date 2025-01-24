@@ -192,6 +192,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 
+  // Contagem
+  const counters = document.querySelectorAll('.counter');
+
+  const updateCounter = (counter) => {
+      counter.innerText = '0';
+      const target = +counter.getAttribute('data-target');
+      const increment = target / 200;
+
+      const incrementCounter = () => {
+          const c = +counter.innerText;
+          if (c < target) {
+              counter.innerText = `${Math.ceil(c + increment)}`;
+              requestAnimationFrame(incrementCounter);
+          } else {
+              counter.innerText = target;
+          }
+      };
+
+      incrementCounter();
+  };
+
+  const observerCounters = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const counter = entry.target;
+              updateCounter(counter);
+              observer.unobserve(counter); // Desativar o observador após a atualização do contador
+          }
+      });
+  }, { threshold: 0.1 });
+
+  counters.forEach(counter => {
+      observerCounters.observe(counter);
+  });
+
+
+
+
+
+
   (function () {
     const advImagesContainer = document.getElementById('advSliderImages');
     const advDotsContainer = document.getElementById('advSliderDots');

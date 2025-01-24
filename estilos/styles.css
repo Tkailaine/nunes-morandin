@@ -844,6 +844,28 @@ font-size: 1.2em;
 
 
 
+.sessao-conquistas{
+  background-color:  #1d4745;
+  height: 400px;
+  color: white;
+  text-align: center;
+ 
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0px 50px; 
+  }
+  
+  .counter {
+  font-size: 60px;
+  margin-top: 10px;
+  }
+
+
 
 
 .mini-blog{
