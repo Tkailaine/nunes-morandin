@@ -191,44 +191,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
 
 
-
-  // Contagem
-  const counters = document.querySelectorAll('.counter');
-
-  const updateCounter = (counter) => {
-      counter.innerText = '0';
-      const target = +counter.getAttribute('data-target');
-      const increment = target / 200;
-
-      const incrementCounter = () => {
-          const c = +counter.innerText;
-          if (c < target) {
-              counter.innerText = `${Math.ceil(c + increment)}`;
-              requestAnimationFrame(incrementCounter);
-          } else {
-              counter.innerText = target;
-          }
-      };
-
-      incrementCounter();
-  };
-
-  const observerCounters = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-          if (entry.isIntersecting) {
-              const counter = entry.target;
-              updateCounter(counter);
-              observer.unobserve(counter); // Desativar o observador após a atualização do contador
-          }
-      });
-  }, { threshold: 0.1 });
+  const counters = document.querySelectorAll('.counter')
 
   counters.forEach(counter => {
-      observerCounters.observe(counter);
-  });
-
-
-
+      counter.innerText = '0'
+  
+      const updateCounter = () => {
+          const target = +counter.getAttribute('data-target')
+          const c = +counter.innerText
+  
+          const increment = target / 200
+  
+          if(c < target) {
+              counter.innerText = `${Math.ceil(c + increment)}`
+              setTimeout(updateCounter, 1)
+          } else {
+              counter.innerText = target
+          }
+      }
+  
+      updateCounter()
+  })
+  
 
 
 
