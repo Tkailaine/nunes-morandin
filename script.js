@@ -80,15 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
-
-
-
-
-
 function moveSlideTo(index) {
   currentIndex = index;
   updateSliderPosition();
@@ -140,10 +131,6 @@ function toggleArea(id) {
 
 
 
-
-
-
-
 // Selecione todos os links de ancoragem
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -159,8 +146,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
-
-
 
 
 
@@ -227,45 +212,4 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
  });
 
 
-  
 
-
-
-  (function () {
-    const advImagesContainer = document.getElementById('advSliderImages');
-    const advDotsContainer = document.getElementById('advSliderDots');
-    const advImages = advImagesContainer.querySelectorAll('img');
-    const advTotalImages = advImages.length;
-
-    let advCurrentIndex = 0;
-
-    // Criação dos dots
-    advImages.forEach((_, index) => {
-        const dot = document.createElement('button');
-        dot.addEventListener('click', () => moveToSlide(index));
-        advDotsContainer.appendChild(dot);
-    });
-
-    const advDots = advDotsContainer.querySelectorAll('button');
-    advDots[advCurrentIndex].classList.add('active');
-
-    // Função para mover o slide
-    function moveToSlide(index) {
-        advCurrentIndex = index;
-        const offset = -advCurrentIndex * 100;
-        advImagesContainer.style.transform = `translateX(${offset}%)`;
-        updateDots();
-    }
-
-    // Atualizar a classe active nos dots
-    function updateDots() {
-        advDots.forEach(dot => dot.classList.remove('active'));
-        advDots[advCurrentIndex].classList.add('active');
-    }
-
-    // Slider automático
-    setInterval(() => {
-        advCurrentIndex = (advCurrentIndex + 1) % advTotalImages;
-        moveToSlide(advCurrentIndex);
-    }, 3000);
-})();
